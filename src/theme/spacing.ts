@@ -1,0 +1,14 @@
+// Spacing scale and section rhythm aligned with Design System recommendations
+export const spacing = {
+  xxs: 4,
+  xs: 8,
+  sm: 12,
+  md: 16,
+  lg: 24,
+  xl: 32,
+  xxl: 48,
+  sectionTop: 96, // recommended section top spacing (80-120)
+  sectionBottom: 96,
+};
+
+export default spacing;
