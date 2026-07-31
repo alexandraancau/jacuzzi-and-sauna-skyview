@@ -1,3 +1,14 @@
+/* Minimal app CSS to satisfy build import */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: var(--app-bg, #fff);
+  color: var(--app-text, #111);
+}
 .hero {
   min-height: 100vh;
 
