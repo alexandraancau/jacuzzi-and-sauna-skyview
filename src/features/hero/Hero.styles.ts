@@ -25,25 +25,27 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 520px;
+  align-items: flex-start;
+  min-height: 70vh;
   color: ${({ theme }) => theme.colors.white};
   padding-top: ${({ theme }) => theme.spacing.xl}px;
   padding-bottom: ${({ theme }) => theme.spacing.xl}px;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    min-height: 80vh;
     padding-top: ${({ theme }) => theme.spacing.xxl}px;
     padding-bottom: ${({ theme }) => theme.spacing.xxl}px;
   }
 `;
 
 export const HeroHeading = styled.h1`
-  margin: 0 0 ${({ theme }) => theme.spacing.md}px;
+  margin: 0 0 ${({ theme }) => theme.spacing.lg}px;
   font-size: ${({ theme }) => theme.typography.fontSizes.xxl}px;
   line-height: 1.05;
 `;
 
 export const HeroText = styled.p`
-  margin: 0 0 ${({ theme }) => theme.spacing.lg}px;
+  margin: 0 0 ${({ theme }) => theme.spacing.xl}px;
   max-width: 720px;
   font-size: ${({ theme }) => theme.typography.fontSizes.md}px;
   line-height: ${({ theme }) => theme.typography.lineHeights.relaxed};

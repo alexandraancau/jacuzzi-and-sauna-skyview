@@ -18,7 +18,7 @@ function Hero() {
         <Container>
           <HeroContent>
             <HeroHeading>Jacuzzi & Sauna Skyview</HeroHeading>
-            <HeroText>Un refugiu privat în Cluj-Napoca...</HeroText>
+            <HeroText>Unwind in your private jacuzzi and sauna retreat in Cluj-Napoca.</HeroText>
             <Button>Verifică disponibilitatea</Button>
           </HeroContent>
         </Container>
