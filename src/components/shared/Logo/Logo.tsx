@@ -1,6 +1,6 @@
 import type { LogoProps } from './Logo.types';
 import Wrapper from './Logo.styles';
-import logoSrc from '../../../assets/logo/skyview-logo-v1.png';
+import logoSrc from '../../../assets/logo/skyview-logo-v1.png.png';
 
 export const Logo = ({
   size = 'medium',

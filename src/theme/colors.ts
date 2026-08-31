@@ -1,8 +1,8 @@
 // Semantic color tokens aligned with the Design System
 export const colors = {
   // Brand
-  signaturePlum: '#6C1B58', // primary brand color
-  signaturePlumDark: '#591444',
+  signaturePlum: '#7A6274', // primary brand color (updated to mockup)
+  signaturePlumDark: '#644D5E',
 
   // Surfaces
   warmIvory: '#FFF8F0', // page/card background

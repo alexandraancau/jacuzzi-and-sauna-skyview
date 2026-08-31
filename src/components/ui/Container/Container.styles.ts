@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import type { Theme } from '../../../theme/theme';
-
 export const StyledContainer = styled.div`
   width: 100%;
   max-width: 1200px;

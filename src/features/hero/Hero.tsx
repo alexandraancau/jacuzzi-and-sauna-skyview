@@ -1,14 +1,9 @@
 import heroImage from '../../assets/hero.jpg';
 import Button from '../../components/ui/Button/Button';
+import ArrowRight from '../../components/ui/Icon/ArrowRight';
 import Container from '../../components/ui/Container';
 import Section from '../../components/ui/Section';
-import {
-  StyledHeroSection,
-  Overlay,
-  HeroContent,
-  HeroHeading,
-  HeroText,
-} from './Hero.styles';
+import { StyledHeroSection, Overlay, HeroContent, HeroHeading, HeroText, Divider } from './Hero.styles';
 
 function Hero() {
   return (
@@ -17,9 +12,14 @@ function Hero() {
         <Overlay />
         <Container>
           <HeroContent>
-            <HeroHeading>Jacuzzi & Sauna Skyview</HeroHeading>
-            <HeroText>Unwind in your private jacuzzi and sauna retreat in Cluj-Napoca.</HeroText>
-            <Button>Verifică disponibilitatea</Button>
+              <HeroHeading>
+                Elevate
+                <br />
+                your stay.
+              </HeroHeading>
+              <Divider aria-hidden />
+              <HeroText>A private rooftop apartment with jacuzzi, sauna and breathtaking views.</HeroText>
+              <Button variant="primary" size="hero" endIcon={<ArrowRight />}>BOOK YOUR ESCAPE</Button>
           </HeroContent>
         </Container>
       </StyledHeroSection>

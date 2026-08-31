@@ -1,29 +1,147 @@
-# Jacuzzi & Sauna Skyview
+# The Design Manifesto
 
-## Design Manifesto
+## Design is not decoration.
 
-We don't design pages.
+Design is the feeling people experience before they notice the details.
 
-We design feelings.
+At Skyview, every decision should make guests feel calmer than they did one moment before.
 
-Every screen, every sentence and every interaction should help our guests slow down, disconnect from everyday stress and enjoy meaningful time together.
+---
 
-We believe that luxury is not about expensive objects.
+# We believe...
 
-Luxury is about peace of mind.
+Luxury is not complexity.
 
-We believe that thoughtful hospitality creates memorable experiences.
+Luxury is simplicity.
 
-Technology should stay in the background.
+Luxury is having enough space to breathe.
 
-The guest should only notice how easy and natural everything feels.
+Luxury is silence.
 
-When in doubt, choose calm over complexity.
+Luxury is time.
 
-Choose warmth over perfection.
+---
 
-Choose authenticity over marketing.
+# Our Principles
 
-Our goal is simple:
+## 01. Emotion before functionality
 
-Help every guest unwind.
+People should feel something before they understand everything.
+
+Emotion creates memory.
+
+---
+
+## 02. Photography is the hero
+
+The apartment tells the story.
+
+The interface should never compete with it.
+
+Use large photography.
+
+Avoid unnecessary decoration.
+
+---
+
+## 03. Calm over complexity
+
+Every screen should remove decisions.
+
+Not add more.
+
+When in doubt:
+
+Choose the simpler solution.
+
+---
+
+## 04. White space is part of the design
+
+Empty space is never wasted space.
+
+It creates rhythm.
+
+It creates calm.
+
+---
+
+## 05. Warmth over perfection
+
+Natural materials.
+
+Warm light.
+
+Human details.
+
+Nothing should feel cold or artificial.
+
+---
+
+## 06. Authenticity over trends
+
+Never follow design trends simply because they are popular.
+
+Every choice should reflect Skyview.
+
+---
+
+## 07. Details create luxury
+
+Luxury is rarely loud.
+
+It lives inside small details.
+
+A soft animation.
+
+Perfect spacing.
+
+Beautiful typography.
+
+Warm lighting.
+
+Natural photography.
+
+---
+
+## 08. Every interaction should slow people down
+
+Transitions.
+
+Typography.
+
+Photography.
+
+Colors.
+
+Copywriting.
+
+Everything should invite guests to breathe.
+
+Never rush them.
+
+---
+
+## 09. Consistency creates trust
+
+The same language.
+
+The same spacing.
+
+The same colors.
+
+The same feeling.
+
+Everywhere.
+
+---
+
+## 10. Unwind is our compass
+
+Every design decision must answer one question:
+
+Does this help guests unwind?
+
+If not,
+
+rethink it.

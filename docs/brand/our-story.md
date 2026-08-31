@@ -19,6 +19,16 @@ The warm atmosphere.
 
 The feeling that someone had thoughtfully prepared everything before we arrived.
 
-That's the experience we wanted to create.
+Those experiences shaped the way we think about hospitality.
+
+When we created Jacuzzi & Sauna Skyview, we didn't try to build just another apartment.
+
+We tried to recreate that feeling.
+
+A place where you can slow down.
+
+Feel at home.
+
+And leave feeling better than when you arrived.
 
 Jacuzzi & Sauna Skyview is our interpretation of the perfect stay we were always looking for as travelers.

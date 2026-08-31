@@ -13,6 +13,7 @@ const sizeStyles: Record<ButtonSize, string> = {
   small: `padding: 6px 10px; font-size: 14px;`,
   medium: `padding: 10px 16px; font-size: 16px;`,
   large: `padding: 14px 20px; font-size: 18px;`,
+  hero: `padding: 16px 34px; font-size: 16px;`,
 };
 
 // Use only allowed theme tokens: signaturePlum, signaturePlumDark, warmIvory and surface
@@ -37,10 +38,21 @@ export const StyledButton = styled.button<StyledButtonProps>`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
+  border-radius: ${(p) => p.theme.radius.small};
   cursor: pointer;
   line-height: 1;
   transition: background 150ms ease, color 150ms ease, border-color 150ms ease;
   ${(props: StyledButtonProps) => sizeStyles[props.$size]}
   ${(props: StyledButtonProps) => variantStyles[props.$variant](props.theme as Theme)}
+  .button-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 12px;
+    line-height: 0;
+  }
+  .button-icon svg {
+    display: block;
+    width: 18px;
+    height: 12px;
+  }
 `;
