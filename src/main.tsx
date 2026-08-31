@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { ThemeProvider } from '@emotion/react';
+import { ThemeProvider, Global, css } from '@emotion/react';
 
 import App from './App';
 import { theme } from './theme/theme';
@@ -15,6 +15,22 @@ import '@fontsource/inter/600.css';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
+      <Global
+        styles={(t) =>
+          css`
+            html, body, #root {
+              height: 100%;
+              margin: 0;
+            }
+
+            body {
+              font-family: ${t.typography.fontFamilies?.body || t.typography.fontFamily};
+              background: var(--app-bg, #fff);
+              color: var(--app-text, #111);
+            }
+          `
+        }
+      />
       <App />
     </ThemeProvider>
   </StrictMode>,

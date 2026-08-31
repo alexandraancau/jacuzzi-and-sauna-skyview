@@ -1,10 +1,16 @@
 // Typography tokens tuned for calm, readable UI
 export const typography = {
+  // Keep top-level backwards-compatible tokens
   // Body UI font (Inter) — imported via @fontsource
   fontFamily:
     "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
   // Heading font (Playfair Display) — imported via @fontsource
   headingFontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
+  // Explicit named families for clarity and reuse across components
+  fontFamilies: {
+    body: "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+    display: "'Playfair Display', Georgia, 'Times New Roman', serif",
+  },
   fontSizes: {
     xs: 12,
     sm: 14,
