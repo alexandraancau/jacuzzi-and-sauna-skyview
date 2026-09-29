@@ -146,4 +146,62 @@ export const AmenityText = styled.p`
   text-align: center;
 `;
 
+export const GallerySection = styled.div`
+  width: min(100%, 1280px);
+  margin: ${(p) => p.theme.spacing.xxl}px auto 0;
+`;
+
+export const GalleryGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  align-items: stretch;
+`;
+
+export const GalleryFeature = styled.div`
+  grid-column: 1 / -1;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: ${(p) => p.theme.shadows.small};
+
+  @media (max-width: ${(p) => p.theme.breakpoints.tablet}) {
+    aspect-ratio: 4 / 3;
+  }
+`;
+
+export const GalleryStack = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+`;
+
+export const GalleryCard = styled.div`
+  width: 100%;
+  aspect-ratio: 4 / 2.35;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: ${(p) => p.theme.shadows.small};
+
+  @media (max-width: ${(p) => p.theme.breakpoints.tablet}) {
+    aspect-ratio: 4 / 3;
+  }
+`;
+
+export const GalleryImage = styled.img`
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: ${(p) => p.theme.colors.surface};
+`;
+
+export const GalleryAction = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: ${(p) => p.theme.spacing.lg}px;
+`;
+
 export default {};
