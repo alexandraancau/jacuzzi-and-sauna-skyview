@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import heroImage from '../../assets/hero.jpg';
 import Button from '../../components/ui/Button/Button';
 import ArrowRight from '../../components/ui/Icon/ArrowRight';
@@ -7,6 +7,8 @@ import Section from '../../components/ui/Section';
 import { StyledHeroSection, Overlay, HeroContent, HeroHeading, HeroText, Divider } from './Hero.styles';
 
 function Hero() {
+  const navigate = useNavigate();
+
   return (
     <Section background="transparent" spacing="large">
       <StyledHeroSection $backgroundImage={heroImage}>
@@ -20,7 +22,7 @@ function Hero() {
               </HeroHeading>
               <Divider aria-hidden />
               <HeroText>A private rooftop apartment with jacuzzi, sauna and breathtaking views.</HeroText>
-              <Button as={Link} to="/availability" variant="primary" size="hero" endIcon={<ArrowRight />}>
+              <Button type="button" variant="primary" size="hero" endIcon={<ArrowRight />} onClick={() => navigate('/availability')}>
                 BOOK YOUR ESCAPE
               </Button>
           </HeroContent>

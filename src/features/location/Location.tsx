@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Section from '../../components/ui/Section/Section';
 import Container from '../../components/ui/Container/Container';
 import Button from '../../components/ui/Button/Button';
@@ -60,6 +60,8 @@ const LOCATION_FACTS: LocationFact[] = [
 ];
 
 const Location: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <Wrapper id="area">
       <Section background="transparent" spacing="large">
@@ -97,7 +99,7 @@ const Location: React.FC = () => {
                 </FactGrid>
 
                 <BookAction>
-                  <Button as={Link} to="/availability" type="button" variant="primary" size="hero" endIcon={<ArrowRight />}>
+                  <Button type="button" variant="primary" size="hero" endIcon={<ArrowRight />} onClick={() => navigate('/availability')}>
                     BOOK YOUR STAY
                   </Button>
                 </BookAction>

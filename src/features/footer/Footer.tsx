@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Button from '../../components/ui/Button/Button';
 import Container from '../../components/ui/Container/Container';
 import Section from '../../components/ui/Section/Section';
@@ -37,6 +37,8 @@ const NAV_ITEMS = [
 ];
 
 const Footer: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <Wrapper>
       <Section background="transparent" spacing="medium">
@@ -46,7 +48,7 @@ const Footer: React.FC = () => {
               <CTATitle>Ready for a private rooftop escape?</CTATitle>
               <CTAText>Settle in, unwind, and enjoy a slower, more memorable stay in Cluj.</CTAText>
             </CTAContent>
-            <Button as={Link} to="/availability" type="button" variant="primary" size="large">
+            <Button type="button" variant="primary" size="large" onClick={() => navigate('/availability')}>
               BOOK YOUR STAY
             </Button>
           </CTA>

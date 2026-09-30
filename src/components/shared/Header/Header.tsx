@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Button from '../../ui/Button/Button';
 import styled from '@emotion/styled';
 import { WordmarkLink, Brand, Subtitle } from './Header.styles';
@@ -27,6 +27,8 @@ const StyledHeaderButton = styled(Button)`
 `;
 
 const Header: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <Wrapper>
       <Container>
@@ -44,7 +46,7 @@ const Header: React.FC = () => {
             <NavLink href="/#contact">Contact</NavLink>
           </Nav>
           <Actions>
-            <StyledHeaderButton as={Link} to="/availability" variant="primary" size="small">
+            <StyledHeaderButton type="button" variant="primary" size="small" onClick={() => navigate('/availability')}>
               Book now
             </StyledHeaderButton>
           </Actions>
