@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../../ui/Button/Button';
 import styled from '@emotion/styled';
 import { WordmarkLink, Brand, Subtitle } from './Header.styles';
@@ -30,20 +31,22 @@ const Header: React.FC = () => {
     <Wrapper>
       <Container>
         <Inner>
-          <WordmarkLink href="/" aria-label="Skyview Jacuzzi & Sauna">
+          <WordmarkLink to="/" aria-label="Skyview Jacuzzi & Sauna">
             <Brand>SKYVIEW</Brand>
             <Subtitle>JACUZZI &amp; SAUNA</Subtitle>
           </WordmarkLink>
           <Nav aria-label="Main navigation">
-            <NavLink href="#">Home</NavLink>
-            <NavLink href="#apartment">Apartment</NavLink>
-            <NavLink href="#wellness">Wellness</NavLink>
-            <NavLink href="#gallery">Gallery</NavLink>
-            <NavLink href="#area">Area</NavLink>
-            <NavLink href="#contact">Contact</NavLink>
+            <NavLink href="/">Home</NavLink>
+            <NavLink href="/#apartment">Apartment</NavLink>
+            <NavLink href="/#wellness">Wellness</NavLink>
+            <NavLink href="/#gallery">Gallery</NavLink>
+            <NavLink href="/#area">Area</NavLink>
+            <NavLink href="/#contact">Contact</NavLink>
           </Nav>
           <Actions>
-            <StyledHeaderButton variant="primary" size="small">Book now</StyledHeaderButton>
+            <StyledHeaderButton as={Link} to="/availability" variant="primary" size="small">
+              Book now
+            </StyledHeaderButton>
           </Actions>
         </Inner>
       </Container>

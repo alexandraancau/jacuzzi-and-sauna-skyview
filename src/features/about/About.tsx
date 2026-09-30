@@ -26,7 +26,7 @@ const About: React.FC = () => {
                 <Button variant="primary" size="small">{ABOUT.cta}</Button>
               </Text>
 
-              <Photo $src={photo} role="img" aria-label="Living room with warm light" />
+              <Photo src={photo} alt="Living room with warm light" />
             </Grid>
           </Container>
         </Content>

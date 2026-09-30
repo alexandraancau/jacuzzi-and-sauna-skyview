@@ -1,15 +1,17 @@
-// Semantic color tokens aligned with the Design System
+// Semantic color tokens aligned with the official Skyview design system
 export const colors = {
   // Brand
-  signaturePlum: '#7A6274', // primary brand color (updated to mockup)
+  signaturePlum: '#7A6274',
   signaturePlumDark: '#644D5E',
+  warmOak: '#C99A70',
+  champagneGlow: '#E6C7A6',
 
   // Surfaces
-  warmIvory: '#FFF8F0', // page/card background
+  warmIvory: '#F6F3F1',
   surface: '#FBF9F7',
 
   // Text
-  deepGraphite: '#1F2933', // primary text
+  deepGraphite: '#3F3B3A',
   textMuted: '#6B7280',
 
   // UI

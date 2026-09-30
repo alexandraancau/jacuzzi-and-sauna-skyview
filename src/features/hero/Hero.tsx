@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import heroImage from '../../assets/hero.jpg';
 import Button from '../../components/ui/Button/Button';
 import ArrowRight from '../../components/ui/Icon/ArrowRight';
@@ -19,7 +20,9 @@ function Hero() {
               </HeroHeading>
               <Divider aria-hidden />
               <HeroText>A private rooftop apartment with jacuzzi, sauna and breathtaking views.</HeroText>
-              <Button variant="primary" size="hero" endIcon={<ArrowRight />}>BOOK YOUR ESCAPE</Button>
+              <Button as={Link} to="/availability" variant="primary" size="hero" endIcon={<ArrowRight />}>
+                BOOK YOUR ESCAPE
+              </Button>
           </HeroContent>
         </Container>
       </StyledHeroSection>

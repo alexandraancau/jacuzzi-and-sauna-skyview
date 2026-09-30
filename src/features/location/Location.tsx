@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Section from '../../components/ui/Section/Section';
 import Container from '../../components/ui/Container/Container';
 import Button from '../../components/ui/Button/Button';
@@ -60,7 +61,7 @@ const LOCATION_FACTS: LocationFact[] = [
 
 const Location: React.FC = () => {
   return (
-    <Wrapper>
+    <Wrapper id="area">
       <Section background="transparent" spacing="large">
         <Content>
           <Container>
@@ -72,7 +73,7 @@ const Location: React.FC = () => {
                 </EyebrowRow>
 
                 <Heading>
-                  <span>Close to everything:</span>
+                  <span>Close to everything.</span>
                   <span>Above the everyday.</span>
                 </Heading>
 
@@ -96,7 +97,7 @@ const Location: React.FC = () => {
                 </FactGrid>
 
                 <BookAction>
-                  <Button type="button" variant="primary" size="hero" endIcon={<ArrowRight />}>
+                  <Button as={Link} to="/availability" type="button" variant="primary" size="hero" endIcon={<ArrowRight />}>
                     BOOK YOUR STAY
                   </Button>
                 </BookAction>

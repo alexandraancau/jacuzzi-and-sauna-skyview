@@ -1,0 +1,112 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#D9B38C"/>
+  <g opacity="0.9">
+    <rect width="1600" height="1200" fill="url(#wood)"/>
+    <g stroke="#C7945A" stroke-opacity="0.5">
+      <path d="M0 20H1600"/>
+      <path d="M0 40H1600"/>
+      <path d="M0 60H1600"/>
+      <path d="M0 80H1600"/>
+      <path d="M0 100H1600"/>
+      <path d="M0 120H1600"/>
+      <path d="M0 140H1600"/>
+      <path d="M0 160H1600"/>
+      <path d="M0 180H1600"/>
+      <path d="M0 200H1600"/>
+      <path d="M0 220H1600"/>
+      <path d="M0 240H1600"/>
+      <path d="M0 260H1600"/>
+      <path d="M0 280H1600"/>
+      <path d="M0 300H1600"/>
+      <path d="M0 320H1600"/>
+      <path d="M0 340H1600"/>
+      <path d="M0 360H1600"/>
+      <path d="M0 380H1600"/>
+      <path d="M0 400H1600"/>
+      <path d="M0 420H1600"/>
+      <path d="M0 440H1600"/>
+      <path d="M0 460H1600"/>
+      <path d="M0 480H1600"/>
+      <path d="M0 500H1600"/>
+      <path d="M0 520H1600"/>
+      <path d="M0 540H1600"/>
+      <path d="M0 560H1600"/>
+      <path d="M0 580H1600"/>
+      <path d="M0 600H1600"/>
+      <path d="M0 620H1600"/>
+      <path d="M0 640H1600"/>
+      <path d="M0 660H1600"/>
+      <path d="M0 680H1600"/>
+      <path d="M0 700H1600"/>
+      <path d="M0 720H1600"/>
+      <path d="M0 740H1600"/>
+      <path d="M0 760H1600"/>
+      <path d="M0 780H1600"/>
+      <path d="M0 800H1600"/>
+      <path d="M0 820H1600"/>
+      <path d="M0 840H1600"/>
+      <path d="M0 860H1600"/>
+      <path d="M0 880H1600"/>
+      <path d="M0 900H1600"/>
+      <path d="M0 920H1600"/>
+      <path d="M0 940H1600"/>
+      <path d="M0 960H1600"/>
+      <path d="M0 980H1600"/>
+      <path d="M0 1000H1600"/>
+      <path d="M0 1020H1600"/>
+      <path d="M0 1040H1600"/>
+      <path d="M0 1060H1600"/>
+      <path d="M0 1080H1600"/>
+      <path d="M0 1100H1600"/>
+      <path d="M0 1120H1600"/>
+      <path d="M0 1140H1600"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="30" y="0" width="180" height="1200" fill="#D8B286" opacity="0.2"/>
+    <rect x="1390" y="0" width="180" height="1200" fill="#D8B286" opacity="0.2"/>
+  </g>
+
+  <g>
+    <rect x="40" y="730" width="900" height="170" rx="16" fill="#C5925B"/>
+    <rect x="90" y="760" width="820" height="100" rx="12" fill="#DDB77E"/>
+    <rect x="100" y="780" width="800" height="22" fill="#B88240" opacity="0.8"/>
+    <rect x="100" y="812" width="800" height="22" fill="#B88240" opacity="0.7"/>
+    <rect x="100" y="844" width="800" height="22" fill="#B88240" opacity="0.7"/>
+  </g>
+
+  <g>
+    <rect x="1010" y="820" width="430" height="250" rx="12" fill="#2A2D31"/>
+    <rect x="1060" y="860" width="330" height="140" rx="8" fill="#7A7C80"/>
+    <circle cx="1285" cy="925" r="90" fill="#9A9A9C"/>
+    <g fill="#6A6D72">
+      <circle cx="1235" cy="925" r="38"/>
+      <circle cx="1335" cy="925" r="38"/>
+      <circle cx="1285" cy="875" r="38"/>
+      <circle cx="1285" cy="975" r="38"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="930" y="920" width="170" height="120" rx="18" fill="#8B6848"/>
+    <rect x="950" y="890" width="130" height="30" rx="10" fill="#D7B38A"/>
+    <rect x="958" y="940" width="110" height="60" rx="10" fill="#A3A6AB"/>
+    <rect x="1000" y="960" width="60" height="16" rx="6" fill="#E7DFD4"/>
+  </g>
+
+  <g>
+    <rect x="1075" y="885" width="44" height="88" rx="8" fill="#D9B289"/>
+    <rect x="1090" y="825" width="14" height="60" rx="7" fill="#E1BF8A"/>
+    <rect x="1430" y="950" width="110" height="80" rx="10" fill="#F1E9DD" opacity="0.8"/>
+    <rect x="1485" y="1000" width="62" height="120" rx="8" fill="#D7B38A"/>
+  </g>
+
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="1600" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0BF96"/>
+      <stop offset="0.5" stop-color="#D1A06D"/>
+      <stop offset="1" stop-color="#C78E5B"/>
+    </linearGradient>
+  </defs>
+</svg>

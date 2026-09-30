@@ -14,13 +14,14 @@ export const Grid = styled.div`
   width: min(100%, 1280px);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
+  grid-template-columns: minmax(0, 0.4fr) minmax(0, 0.6fr);
+  gap: 40px;
   align-items: center;
 
-  @media (min-width: ${(p) => p.theme.breakpoints.desktop}) {
-    grid-template-columns: 0.46fr 0.54fr;
-    gap: 36px;
+  @media (max-width: ${(p) => p.theme.breakpoints.desktop}) {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    align-items: flex-start;
   }
 `;
 
@@ -28,6 +29,9 @@ export const LeftColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
 `;
 
 export const EyebrowRow = styled.div`
@@ -57,9 +61,9 @@ export const Heading = styled.h2`
   margin: 0;
   display: flex;
   flex-direction: column;
-  width: min(100%, 520px);
+  width: min(100%, 480px);
   font-family: ${(p) => p.theme.typography.headingFontFamily};
-  font-size: clamp(2.3rem, 2.9vw, 3.7rem);
+  font-size: clamp(2.5rem, 2.8vw, 4rem);
   line-height: 0.96;
   letter-spacing: -0.06em;
   color: ${(p) => p.theme.colors.deepGraphite};
@@ -81,8 +85,8 @@ export const Heading = styled.h2`
 
 export const Body = styled.p`
   margin: ${(p) => p.theme.spacing.md}px 0 0;
-  max-width: 540px;
-  font-size: clamp(1.05rem, 1.4vw, 1.3rem);
+  max-width: 520px;
+  font-size: clamp(1.03rem, 1.2vw, 1.25rem);
   line-height: 1.6;
   color: ${(p) => p.theme.colors.deepGraphite};
   opacity: 0.82;
@@ -93,7 +97,6 @@ export const FactGrid = styled.div`
   margin-top: ${(p) => p.theme.spacing.lg}px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-top: 1px solid rgba(122, 98, 116, 0.2);
 
   @media (max-width: ${(p) => p.theme.breakpoints.mobile}) {
     grid-template-columns: 1fr;
@@ -104,18 +107,17 @@ export const FactItem = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  gap: 14px;
-  min-height: 104px;
-  padding: 14px 14px 14px 0;
-  border-bottom: 1px solid rgba(122, 98, 116, 0.15);
+  gap: 12px;
+  min-height: 88px;
+  padding: 12px 12px 12px 0;
 
   &::after {
     content: '';
     position: absolute;
-    top: 18px;
+    top: 10px;
     right: 0;
     width: 1px;
-    height: calc(100% - 36px);
+    height: calc(100% - 20px);
     background: rgba(122, 98, 116, 0.12);
   }
 
@@ -134,9 +136,12 @@ export const FactItem = styled.div`
 
   @media (max-width: ${(p) => p.theme.breakpoints.mobile}) {
     min-height: auto;
+    padding: 14px 0;
+
     &::after {
       display: none;
     }
+
     &:nth-of-type(even) {
       padding-left: 0;
     }
@@ -147,15 +152,15 @@ export const FactIconWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   flex-shrink: 0;
   color: ${(p) => p.theme.colors.signaturePlum};
 
   img {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     object-fit: contain;
   }
 `;
@@ -169,22 +174,22 @@ export const FactText = styled.div`
 `;
 
 export const FactPrimary = styled.span`
-  font-size: clamp(1.05rem, 1.4vw, 1.5rem);
+  font-size: clamp(1rem, 1.25vw, 1.4rem);
   line-height: 1.2;
   font-weight: ${(p) => p.theme.typography.fontWeights.semibold};
   color: ${(p) => p.theme.colors.deepGraphite};
 `;
 
 export const FactSecondary = styled.span`
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.35;
   color: ${(p) => p.theme.colors.deepGraphite};
   opacity: 0.8;
 `;
 
 export const FactTertiary = styled.span`
-  font-size: 0.9rem;
-  line-height: 1.3;
+  font-size: 0.82rem;
+  line-height: 1.35;
   color: ${(p) => p.theme.colors.textMuted};
 `;
 
@@ -195,12 +200,27 @@ export const BookAction = styled.div`
 export const RightColumn = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
 `;
 
 export const MapPanel = styled.div`
   position: relative;
-  width: min(100%, 720px);
-  aspect-ratio: 1.2;
+  width: 100%;
+  max-width: 760px;
+  min-height: 520px;
+  height: 100%;
+  aspect-ratio: 1.18;
+
+  @media (max-width: ${(p) => p.theme.breakpoints.desktop}) {
+    min-height: 420px;
+  }
+
+  @media (max-width: ${(p) => p.theme.breakpoints.tablet}) {
+    min-height: 360px;
+  }
 `;
 
 export const MapCanvas = styled.div`

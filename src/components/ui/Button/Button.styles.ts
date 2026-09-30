@@ -34,11 +34,13 @@ const variantStyles: Record<ButtonVariant, (theme: Theme) => string> = {
   `,
 };
 
-export const StyledButton = styled.button<StyledButtonProps>`
+export const StyledButton = styled('button', {
+  shouldForwardProp: (prop: string) => prop !== '$variant' && prop !== '$size',
+})<StyledButtonProps>`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: ${(p) => p.theme.radius.small};
+  border-radius: ${(p: StyledButtonProps) => p.theme?.radius.small ?? 0};
   cursor: pointer;
   line-height: 1;
   transition: background 150ms ease, color 150ms ease, border-color 150ms ease;

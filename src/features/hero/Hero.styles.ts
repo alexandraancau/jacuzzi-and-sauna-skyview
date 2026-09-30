@@ -102,6 +102,6 @@ export const Divider = styled.span`
   width: 28px;
   height: 3px;
   border-radius: 2px;
-  background: #E6C7A6; /* Champagne Glow */
+  background: ${({ theme }) => theme.colors.champagneGlow};
   margin: ${({ theme }) => theme.spacing.sm}px 0 ${({ theme }) => theme.spacing.md}px;
 `;

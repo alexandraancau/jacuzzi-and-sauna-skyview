@@ -15,7 +15,8 @@
     "@fontsource/inter": "^4.5.12",
     "@fontsource/playfair-display": "^4.5.12",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

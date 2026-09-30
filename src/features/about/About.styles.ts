@@ -8,6 +8,11 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
   padding-top: ${(p) => p.theme.spacing.sectionTop}px;
   padding-bottom: ${(p) => p.theme.spacing.sectionBottom}px;
+
+  @media (min-width: ${(p) => p.theme.breakpoints.tablet}) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 `;
 
 export const Grid = styled.div`
@@ -16,24 +21,29 @@ export const Grid = styled.div`
   gap: ${(p) => p.theme.spacing.xl}px;
 
   @media (min-width: ${(p) => p.theme.breakpoints.tablet}) {
-    /* Give the photo slightly more visual weight on desktop */
-    grid-template-columns: 1fr 1.3fr;
-    align-items: center;
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    align-items: stretch;
+    width: 100%;
+    margin-right: 0;
+    gap: 0;
   }
 `;
 
-export const Photo = styled.div<{ $src: string }>`
+export const Photo = styled.img`
+  display: block;
   width: 100%;
   height: 360px;
-  background-image: url(${(p) => p.$src});
-  background-size: cover;
-  background-position: center;
-  border-radius: ${(p) => p.theme.radius.large};
-  box-shadow: ${(p) => p.theme.shadows.medium};
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+  box-shadow: none;
 
   @media (min-width: ${(p) => p.theme.breakpoints.tablet}) {
-    /* Taller image on desktop for greater dominance */
-    height: 480px;
+    height: 100%;
+    min-height: 520px;
+    max-height: 100%;
+    margin: 0;
+    transform: translateX(0);
   }
 `;
 
@@ -64,7 +74,7 @@ export const OakLine = styled.span`
   width: 36px;
   height: 3px;
   border-radius: 2px;
-  background: #C99A70; /* Warm Oak from design docs */
+  background: ${(p) => p.theme.colors.warmOak};
 `;
 
 export const Heading = styled.h2`

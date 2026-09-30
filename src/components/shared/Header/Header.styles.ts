@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 
 export const Wrapper = styled.header`
@@ -58,7 +59,7 @@ export const Wordmark = styled.div`
   gap: 8px;
 `;
 
-export const WordmarkLink = styled.a`
+export const WordmarkLink = styled(Link)`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
